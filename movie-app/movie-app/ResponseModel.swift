@@ -7,14 +7,14 @@
 
 import Foundation
 
+//search result model
 struct Results : Decodable {
+    //codingkey used to basically make data more readable or lowercase
     enum CodingKeys: String, CodingKey {
         case list = "Search"
         case amountOfItems = "totalResults"
-        case details = ""
        }
     let list : Array<Item>?
-    let details : ItemDetail?
     let amountOfItems : String?
 }
     

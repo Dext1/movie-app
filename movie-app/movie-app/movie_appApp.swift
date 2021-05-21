@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct movie_appApp: App {
+    // init global state object
+    @StateObject private var fetchAndParse = FetchAndParse()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            //create environmentObject to Contentview
+            ContentView().environmentObject(fetchAndParse)
         }
     }
 }
