@@ -18,5 +18,3 @@ Known bugs:
 - Doesn't hide searchbar on first transition to detailed view after startup.
 - Doesn't hide tabs on detailed view.
 - Clicking on tabs in detailed view can break view hierarchy.
-
-Screencast: https://youtu.be/ae1ckW1--mQ
